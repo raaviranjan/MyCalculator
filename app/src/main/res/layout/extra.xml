@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:text="log"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/blog"
+        android:layout_below="@+id/bcos"
+        android:layout_alignLeft="@+id/bsin"
+        android:layout_alignStart="@+id/bsin" />
+
+    <Button
+        android:text="ln"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bln"
+        android:layout_alignBaseline="@+id/blog"
+        android:layout_alignBottom="@+id/blog"
+        android:layout_toRightOf="@+id/blog"
+        android:layout_toEndOf="@+id/blog" />
+
+    <Button
+        android:text="sqr"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bsqr"
+        android:layout_below="@+id/blog"
+        android:layout_alignLeft="@+id/blog"
+        android:layout_alignStart="@+id/blog" />
+
+    <Button
+        android:text="sqrt"
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bsqrt"
+        android:layout_below="@+id/bln"
+        android:layout_toRightOf="@+id/blog"
+        android:layout_toEndOf="@+id/blog" />
+
+    <Button
+        android:text="exp"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bexp"
+        android:layout_alignBaseline="@+id/bln"
+        android:layout_alignBottom="@+id/bln"
+        android:layout_toRightOf="@+id/bln"
+        android:layout_toEndOf="@+id/bln" />
+
+    <Button
+        android:text="cbrt"
+        android:layout_width="65dp"
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bcbrt"
+        android:layout_below="@+id/bexp"
+        android:layout_toRightOf="@+id/bsqrt"
+        android:layout_toEndOf="@+id/bsqrt" />
+
+    <Button
+        android:text="1/x"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/breci"
+        android:layout_above="@+id/bans"
+        android:layout_alignLeft="@+id/bpow"
+        android:layout_alignStart="@+id/bpow"
+        android:layout_alignRight="@+id/bpow"
+        android:layout_alignEnd="@+id/bpow" />
+
+    <Button
+        android:text="ans"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:id="@+id/bans"
+        android:layout_below="@+id/btan"
+        android:layout_alignLeft="@+id/breci"
+        android:layout_alignStart="@+id/breci"
+        android:layout_alignRight="@+id/breci"
+        android:layout_alignEnd="@+id/breci"
+        android:layout_above="@+id/bcbrt" />
+
+    <Button
+        android:text="acos"
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bacos"
+        android:layout_above="@+id/bcos"
+        android:layout_toRightOf="@+id/basin"
+        android:layout_toEndOf="@+id/basin" />
+
+    <Button
+        android:text="x!"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bpow"
+        android:layout_alignBaseline="@+id/batan"
+        android:layout_alignBottom="@+id/batan"
+        android:layout_toRightOf="@+id/batan"
+        android:layout_toEndOf="@+id/batan" />
+
+    <Button
+        android:text="atan"
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/batan"
+        android:layout_alignBaseline="@+id/bacos"
+        android:layout_alignBottom="@+id/bacos"
+        android:layout_toRightOf="@+id/bacos"
+        android:layout_toEndOf="@+id/bacos" />
+
+    <Button
+        android:text="cos"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/bcos"
+        android:layout_below="@+id/basin"
+        android:layout_toLeftOf="@+id/batan"
+        android:layout_toStartOf="@+id/batan" />
+
+    <Button
+        android:text="tan"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/btan"
+        android:layout_alignBaseline="@+id/bcos"
+        android:layout_alignBottom="@+id/bcos"
+        android:layout_toRightOf="@+id/bacos"
+        android:layout_toEndOf="@+id/bacos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/t2"
+        android:layout_marginTop="63dp"
+        android:hint="Display"
+
+        android:textSize="25sp"
+        android:height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/basin"
+        android:layout_alignStart="@+id/basin"
+        android:layout_alignRight="@+id/bpow"
+        android:layout_alignEnd="@+id/bpow" />
+
+    <Button
+        android:text="sin"
+        android:layout_width="65dp"
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:id="@+id/bsin"
+        android:layout_below="@+id/basin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="asin"
+
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/basin"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/bsin"
+        android:layout_alignStart="@+id/bsin" />
+
+    <Button
+        android:text="Bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bans"
+        android:layout_toRightOf="@+id/bcbrt"
+        android:id="@+id/bback"
+        android:layout_alignRight="@+id/bans"
+        android:layout_alignEnd="@+id/bans" />
+
+</RelativeLayout>
